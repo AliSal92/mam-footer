@@ -46,3 +46,16 @@ function mam_footer_th($atts, $content = "") {
     }
     return $html;
 }
+
+add_shortcode( 'mam_footer_th', 'mam_footer_th' );
+function mam_footer_th($atts, $content = "") {
+    $content = trim($content);
+    if(!$content){
+        $content = "Move Ahead Media";
+    }
+    $html = '<a href="http://www.moveaheadmedia.co.th/rel="nofollow, noopener" target="_blank">'.$content.'</a>';
+    if(is_front_page()){
+        $html = '<a href="http://www.moveaheadmedia.co.th/" rel="follow, noopener" target="_blank">'.$content.'</a>';
+    }
+    return $html;
+}
