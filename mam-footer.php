@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: MAM Footer
- * Plugin URI: http://www.mywebsite.com/my-first-plugin
+ * Plugin URI: https://github.com/AliSal92/mam-footer
  * Description: Generates [mam_footer_uk], [mam_footer_th], [mam_footer_th_th] and [mam_footer_au] shortcodes used to add Designed by moveaheadmedia link to the website footer. Can be used like this too [mam_footer_au]Move Ahead Media[/mam_footer_au]
  * Version: 1.0
  * Author: Ali Sal
