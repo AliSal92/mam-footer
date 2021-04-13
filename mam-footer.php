@@ -9,7 +9,11 @@
  */
 
 add_shortcode( 'mam_footer_uk', 'mam_footer_uk' );
-function mam_footer_uk($atts, $content = "Move Ahead Media") {
+function mam_footer_uk($atts, $content = "") {
+    $content = trim($content);
+    if(!$content){
+        $content = "Move Ahead Media";
+    }
     $html = '<a href="http://www.moveaheadmedia.co.uk/" rel="nofollow, noopener" target="_blank">'.$content.'</a>';
     if(is_front_page()){
         $html = '<a href="http://www.moveaheadmedia.co.uk/" rel="follow, noopener" target="_blank">'.$content.'</a>';
@@ -18,7 +22,11 @@ function mam_footer_uk($atts, $content = "Move Ahead Media") {
 }
 
 add_shortcode( 'mam_footer_au', 'mam_footer_au' );
-function mam_footer_au($atts, $content = "Move Ahead Media") {
+function mam_footer_au($atts, $content = "") {
+    $content = trim($content);
+    if(!$content){
+        $content = "Move Ahead Media";
+    }
     $html = '<a href="http://www.moveaheadmedia.com.au/" rel="nofollow, noopener" target="_blank">'.$content.'</a>';
     if(is_front_page()){
         $html = '<a href="http://www.moveaheadmedia.com.au/" rel="follow, noopener" target="_blank">'.$content.'</a>';
@@ -27,7 +35,11 @@ function mam_footer_au($atts, $content = "Move Ahead Media") {
 }
 
 add_shortcode( 'mam_footer_th_th', 'mam_footer_th_th' );
-function mam_footer_th($atts, $content = "Move Ahead Media") {
+function mam_footer_th($atts, $content = "") {
+    $content = trim($content);
+    if(!$content){
+        $content = "Move Ahead Media";
+    }
     $html = '<a href="http://www.moveaheadmedia.co.th/th/" rel="nofollow, noopener" target="_blank">'.$content.'</a>';
     if(is_front_page()){
         $html = '<a href="http://www.moveaheadmedia.co.th/th/" rel="follow, noopener" target="_blank">'.$content.'</a>';
