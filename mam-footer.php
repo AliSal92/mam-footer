@@ -35,7 +35,7 @@ function mam_footer_au($atts, $content = "") {
 }
 
 add_shortcode( 'mam_footer_th_th', 'mam_footer_th_th' );
-function mam_footer_th($atts, $content = "") {
+function mam_footer_th_th($atts, $content = "") {
     $content = trim($content);
     if(!$content){
         $content = "Move Ahead Media";
