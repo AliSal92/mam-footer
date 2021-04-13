@@ -4,6 +4,9 @@ Generates `[mam_footer_uk]`, `[mam_footer_th]`, `[mam_footer_th_th]` and `[mam_f
 
 Can be used like this too `[mam_footer_au]Move Ahead Media[/mam_footer_au]`
 
-Link specs:
+
+##Link specs:
+
 rel="follow, noopenner" on the home page.
+
 rel="nofollow, noopenner" on the other pages of the website.
